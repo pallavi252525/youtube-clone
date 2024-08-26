@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="icon" type="image/x-icon" href="https://www.flaticon.com/download/icon/15047410?icon_id=15047410&author=1478&team=1478&keyword=Video&pack=packs%2Fsocial-network-flat-15047287&style=1236&format=png&color=&colored=2&size=512&selection=1&premium=0&type=standard">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-row gap-3">
+        <!-- for side bar -->
+            
+      <div class="flex flex-col h-screen w-[55px]">
+        <div class="flex items-center justify-center mt-5 ml-5">
+            <svg class="w-8 h-8 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+              </svg>              
+        </div>
+        <div class="flex flex-col items-center justify-center mt-8 ml-5 transform transition duration-300 hover:scale-[1.05]">
+         <img src="https://cdn-icons-png.flaticon.com/128/20/20176.png" alt="" class="h-6 w-6">
+         <p class="text-xs">Home</p>
+        </div>
+        <div class="flex flex-col items-center justify-center mt-5 ml-5 transform transition duration-300 hover:scale-[1.05]">
+            <img src="https://th.bing.com/th/id/OIP.eUnke7vOc7jcw75dhpryUwAAAA?rs=1&pid=ImgDetMain" alt="">
+            <p class="text-xs">shorts</p>
+        </div>
+         <div class="flex flex-col items-center justify-center mt-5 ml-5 transform transition duration-300 hover:scale-[1.05]">
+            <img src="https://img.icons8.com/?size=80&id=reqYJP3X0f7Y&format=png" alt="" class="h-6 w-6">
+            <p class="text-xs">subscription</p>
+         </div>
+         <div class="flex flex-col items-center justify-center mt-5 ml-5 transform transition duration-300 hover:scale-[1.05]">
+            <img src="https://cdn-icons-png.flaticon.com/128/17259/17259896.png" alt="">
+            <p class="text-xs">You</p>
+         </div>
+      </div>
+
+       <!-- for header -->
+
+      <div class="flex flex-col w-screen">
+         <!-- for search bar section -->
+          <div  class="flex flex-row justify-between">
+             <!-- 1st div -->
+             <div>
+                <div class="h-[70px] w-[122px]">
+                    <img src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg" alt="">
+                 </div>
+             </div>
+                <!-- 2nd div -->
+             <div>
+                <div class="flex flex-row mt-5 gap-3">
+                    <div class="flex h-8 w-[500px] border  rounded-[25px] p-5 items-center">
+                        <p> search</p>
+                        <svg class="w-4 h-4 ml-auto flex text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                          </svg>    
+                    </div>
+                    <div class="flex items-center justify-center border rounded-[50%] px-2 mb-2">
+                        <img src="https://img.icons8.com/?size=24&id=85836&format=png" alt="">
+                    </div>      
+                    </div>
+             </div>   
+                    <!--3rd div  -->
+             <div>
+                <div class="flex flex-row gap-3 mt-5 mr-8">
+                    <div>
+                        <img src="https://www.svgrepo.com/show/168312/plus-sign-in-a-circle.svg" alt="" class="h-8 w-8 mt-1">
+                       </div>
+                       <div class="">
+                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" class="mt-1">
+                              <path d="M 25 0 C 22.800781 0 21 1.800781 21 4 C 21 4.515625 21.101563 5.015625 21.28125 5.46875 C 15.65625 6.929688 12 11.816406 12 18 C 12 25.832031 10.078125 29.398438 8.25 31.40625 C 7.335938 32.410156 6.433594 33.019531 5.65625 33.59375 C 5.265625 33.878906 4.910156 34.164063 4.59375 34.53125 C 4.277344 34.898438 4 35.421875 4 36 C 4 37.375 4.84375 38.542969 6.03125 39.3125 C 7.21875 40.082031 8.777344 40.578125 10.65625 40.96875 C 13.09375 41.472656 16.101563 41.738281 19.40625 41.875 C 19.15625 42.539063 19 43.253906 19 44 C 19 47.300781 21.699219 50 25 50 C 28.300781 50 31 47.300781 31 44 C 31 43.25 30.847656 42.535156 30.59375 41.875 C 33.898438 41.738281 36.90625 41.472656 39.34375 40.96875 C 41.222656 40.578125 42.78125 40.082031 43.96875 39.3125 C 45.15625 38.542969 46 37.375 46 36 C 46 35.421875 45.722656 34.898438 45.40625 34.53125 C 45.089844 34.164063 44.734375 33.878906 44.34375 33.59375 C 43.566406 33.019531 42.664063 32.410156 41.75 31.40625 C 39.921875 29.398438 38 25.832031 38 18 C 38 11.820313 34.335938 6.9375 28.71875 5.46875 C 28.898438 5.015625 29 4.515625 29 4 C 29 1.800781 27.199219 0 25 0 Z M 25 2 C 26.117188 2 27 2.882813 27 4 C 27 5.117188 26.117188 6 25 6 C 23.882813 6 23 5.117188 23 4 C 23 2.882813 23.882813 2 25 2 Z M 27.34375 7.1875 C 32.675781 8.136719 36 12.257813 36 18 C 36 26.167969 38.078125 30.363281 40.25 32.75 C 41.335938 33.941406 42.433594 34.6875 43.15625 35.21875 C 43.515625 35.484375 43.785156 35.707031 43.90625 35.84375 C 44.027344 35.980469 44 35.96875 44 36 C 44 36.625 43.710938 37.082031 42.875 37.625 C 42.039063 38.167969 40.679688 38.671875 38.9375 39.03125 C 35.453125 39.753906 30.492188 40 25 40 C 19.507813 40 14.546875 39.753906 11.0625 39.03125 C 9.320313 38.671875 7.960938 38.167969 7.125 37.625 C 6.289063 37.082031 6 36.625 6 36 C 6 35.96875 5.972656 35.980469 6.09375 35.84375 C 6.214844 35.707031 6.484375 35.484375 6.84375 35.21875 C 7.566406 34.6875 8.664063 33.941406 9.75 32.75 C 11.921875 30.363281 14 26.167969 14 18 C 14 12.261719 17.328125 8.171875 22.65625 7.21875 C 23.320313 7.707031 24.121094 8 25 8 C 25.886719 8 26.679688 7.683594 27.34375 7.1875 Z M 21.5625 41.9375 C 22.683594 41.960938 23.824219 42 25 42 C 26.175781 42 27.316406 41.960938 28.4375 41.9375 C 28.792969 42.539063 29 43.25 29 44 C 29 46.222656 27.222656 48 25 48 C 22.777344 48 21 46.222656 21 44 C 21 43.242188 21.199219 42.539063 21.5625 41.9375 Z"></path>
+                              </svg>
+                       </div>
+                       <div class="flex items-center justify-center bg-blue-800 h-10 w-10 p-5 rounded-[50%]">
+                          <p class="text-xl text-white">PS</p>
+                       </div>         
+                </div>
+             </div>   
+          </div>
+        <!-- for suggestion cubes -->
+           <div class="flex flex-row h-[56px] justify-evenly">
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                All
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Web-develpment
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Graphic-design
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Java
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Oops
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Music
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Mukbang
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Dance
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Figma
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                T-series
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Mixes
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Indian cuisine
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                 Movies
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                Javascript
+             </div>
+             <div class="flex px-3 h-7 bg-blue-100 rounded-lg hover:bg-black hover:text-white">
+                tailwindcss
+             </div>
+             <div>
+                <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 16 4-4-4-4"/>
+                  </svg>                  
+             </div>
+           </div>
+        <!-- for videos -->
+            <div class="flex flex-wrap ml-5 gap-3">
+                 <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" controls loop poster="https://th.bing.com/th/id/OIP.PKvRFcYvpWjPrY0e3e5CSgHaEK?w=276&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                             <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">AC</div>
+                             <div class="flex flex-col flex-wrap ml-2">
+                                 <div>
+                                    <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                                 <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                                 </div>
+                                 <div class="text-gray-500">
+                                     <div class="flex flex-row">
+                                       <p>Apna College </p>
+                                       <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                          <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                          </svg>
+                                     </div>
+                                     <p> 2M views . 2 days ago</p>
+                                 </div>
+                             </div>
+                             <div>
+                              <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                               </svg>     
+                             </div>
+                     </div>
+                 </div>
+
+                  <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://i.ytimg.com/vi/yRpLlJmRo2w/sddefault.jpg"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">AC</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Lecture 1 | JAVA</h3>
+                            <h3 class="font-semibold ">Tutorial with Notes, code| JAVA</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>Apna College </p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 10M views . 2 years ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                      </div>
+                   </div>
+
+                   <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://i.ytimg.com/vi/m-cAam0bPqA/maxresdefault.jpg"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">AC</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Introduction to Javascript</h3>
+                            <h3 class="font-semibold ">Tutorial with Notes, code| JS</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>Apna College </p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 5M views . 1 month ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                        </div>
+                   </div>
+
+                   <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://picasso.cosmofeed.com/media.cosmofeed.com/IMG-20231028-WA0044-2023-29-10-03-12-16.jpg?w=600&q=100"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">AC</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">New | Complete</h3>
+                            <h3 class="font-semibold ">Web-develpment course</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>Apna College </p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 50k views . 1 week ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://th.bing.com/th/id/OIP.-Wn7GMQZMAc8ZQLO5JEEbQAAAA?rs=1&pid=ImgDetMain"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">H</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Master React</h3>
+                            <h3 class="font-semibold ">step-by-step| React</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>CodeWithHarry</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 2M views . 2 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                        </div>
+                   </div>
+
+                   <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://insanebiography.com/wp-content/uploads/photo_2021-03-21_23-10-48-min.jpg"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">H</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                            <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>CodeWithHarry</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 2M views . 2 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                       </div>
+                   </div>
+
+                   <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://www.hindi2lyrics.com/wp-content/uploads/2024/07/Haan-Ke-Haan-Song.jpg"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">S</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                            <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>Songs</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 2M views . 2 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                         </div>
+                 </div>
+
+                 <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                  <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                     <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://th.bing.com/th/id/OIP.09a4Pgc9bE-kEpnZ6n399gAAAA?rs=1&pid=ImgDetMain"></video>
+                  </div>
+                  <div class="flex flex-row m-2 justify-between">
+                     <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">M</div>
+                     <div class="flex flex-col flex-wrap ml-2">
+                         <div>
+                            <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                         <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                         </div>
+                         <div class="text-gray-500">
+                             <div class="flex flex-row">
+                               <p>Music</p>
+                               <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                  <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                  </svg>
+                             </div>
+                             <p> 2M views . 2 days ago</p>
+                         </div>
+                     </div>
+                     <div>
+                      <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                       </svg>     
+                     </div>
+                     </div>
+                 </div>
+
+                 <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                  <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                     <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://th.bing.com/th/id/OIP.BOSUEmbQygC8OcF35fbEXgHaEK?rs=1&pid=ImgDetMain"></video>
+                  </div>
+                  <div class="flex flex-row m-2 justify-between">
+                     <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">C</div>
+                     <div class="flex flex-col flex-wrap ml-2">
+                         <div>
+                            <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                         <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                         </div>
+                         <div class="text-gray-500">
+                             <div class="flex flex-row">
+                               <p>Cooking </p>
+                               <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                  <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                  </svg>
+                             </div>
+                             <p> 2M views . 2 days ago</p>
+                         </div>
+                     </div>
+                     <div>
+                      <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                       </svg>     
+                     </div>
+                    </div>
+                   </div>
+
+                   <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0d6390145339107.62aa0399cd0be.jpg"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">F</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                            <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>Food</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 2M views . 2 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                        </div>
+                   </div>
+
+                   <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                     <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                        <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://th.bing.com/th/id/OIP.MBsRIZYk6ZJYBtUoelRaWgHaEL?w=285&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"></video>
+                     </div>
+                     <div class="flex flex-row m-2 justify-between">
+                        <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">T</div>
+                        <div class="flex flex-col flex-wrap ml-2">
+                            <div>
+                               <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                            <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                            </div>
+                            <div class="text-gray-500">
+                                <div class="flex flex-row">
+                                  <p>Travel</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                     <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                     </svg>
+                                </div>
+                                <p> 2M views . 2 days ago</p>
+                            </div>
+                        </div>
+                        <div>
+                         <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                          </svg>     
+                        </div>
+                         </div>
+                 </div>
+                 <div class="flex flex-col h-[329.99px] w-[325.61px] border rounded-[15px] hover:bg-blue-50 duration-200 transform transition duration-300 hover:scale-[1.05]">
+                  <div class="flex h-[60%] w-[95%] border rounded-[15px] ml-2 mt-2 relative">
+                     <video src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" class="h-full w-full rounded-[15px] object-cover" poster="https://th.bing.com/th/id/OIP.eQ3EXAqi1y1eP5QzUEBlwgHaEK?w=276&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"></video>
+                  </div>
+                  <div class="flex flex-row m-2 justify-between">
+                     <div class="bg-blue-800 text-white p-2 rounded-[50%] h-10 w-10 text-center">T</div>
+                     <div class="flex flex-col flex-wrap ml-2">
+                         <div>
+                            <h3 class="font-semibold ">Complete HTML in 2 hours</h3>
+                         <h3 class="font-semibold ">Tutorial with Notes, code| HTML</h3>
+                         </div>
+                         <div class="text-gray-500">
+                             <div class="flex flex-row">
+                               <p>Tips </p>
+                               <svg xmlns="http://www.w3.org/2000/svg" h-[5px] w-[5px] x="0px" y="0px" width="25" height="25" viewBox="0 0 64 64">
+                                  <path fill="#060000" d="M32,10c12.131,0,22,9.869,22,22s-9.869,22-22,22s-22-9.869-22-22S19.869,10,32,10z M42.362,28.878	c0.781-0.781,0.781-2.047,0-2.828c-0.781-0.781-2.047-0.781-2.828,0l-9.121,9.121l-5.103-5.103c-0.781-0.781-2.047-0.781-2.828,0	c-0.781,0.781-0.781,2.047,0,2.828l6.517,6.517C29.374,39.789,29.883,40,30.413,40s1.039-0.211,1.414-0.586L42.362,28.878z"></path>
+                                  </svg>
+                             </div>
+                             <p> 2M views . 2 days ago</p>
+                         </div>
+                     </div>
+                     <div>
+                      <svg class="w-6 h-6 text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01"/>
+                       </svg>     
+                     </div>
+                    </div>
+              </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
